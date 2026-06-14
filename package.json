@@ -1,0 +1,10 @@
+{
+  "homepage": "https://eupedrobarbosa03.github.io/localiza-cep",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
