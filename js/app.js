@@ -43,7 +43,7 @@ class CEP {
         this.containerInformationsCEP.innerHTML =
             `
             <div id="container-flag-state-and-name">
-                    <img src="assets/flags_uf/${value.uf}.png">
+                    <img src="assets/flags_uf/${value.uf.toLowerCase()}.png">
                     <p>${value.estado}</p>
                 </div>
                 <div id="informations-cep">
