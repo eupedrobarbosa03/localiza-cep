@@ -1,7 +1,7 @@
 const phrases = [
     {
         type: "title-presentation",
-        text: "Descubra as informações do seu CEP atráves do LOCALIZACEP!"
+        text: "Descubra as informações do seu CEP através do LOCALIZACEP!"
     },
     {
         type: "sub-title-presentation",
