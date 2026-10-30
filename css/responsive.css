@@ -1,13 +1,5 @@
 #navbar-menu {
-    color: #138110;
-    font-size: 2rem;
-    transition: .4s;
-    cursor: pointer;
     display: none;
-}
-
-#navbar-menu:hover {
-    color: #1ba817;
 }
 
 @media screen and (max-width: 670px) {
@@ -17,37 +9,48 @@
     }
 
     #navbar-container {
-        display: none;   
+        position: fixed;   
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform .5s ease-in-out;
+        z-index: 1000;
+        background-color: #138110;
+        color: #fff;
     }
 
     #navbar-menu {
+        color: #1ba817;
+        font-size: 2rem;
+        transition: .4s;
+        cursor: pointer;
+        position: relative;
         display: block;
+        z-index: 1001;
     }
 
-    #header-container {
-        position: relative;
+    #navbar-container a {
+        color: #fff;
+        padding-left: 1.5rem;
+        &:hover {
+            color: #ffffff75;
+        }
     }
 
     #navbar-container.active {
-        position: absolute;
-        top: -10px;
+        transform: translateX(0);
         display: flex;
-        left: -20px;
-        width: 300px;
-        height: auto;
         flex-direction: column;
-        box-sizing: border-box;
-        padding: 1.5rem;
-        align-items: flex-start;
-        background-color: #fff;
-        border-radius: 5px;
-        opacity: 1;
-        z-index: 1;
+        align-items: start;
+        justify-content: center;
     }
 
     #title-presentation {
         font-size: 2rem;
     }
+
 
     #sub-title-presentation {
         font-size: .9rem;
